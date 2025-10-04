@@ -1,0 +1,10 @@
+components/
+├── Navbar.jsx
+├── HeroSection.jsx
+├── Featured.jsx
+├── About.jsx
+├── ProductShowcase.jsx
+├── Newsletter.jsx
+├── Footer.jsx
+pages/
+└── index.js
