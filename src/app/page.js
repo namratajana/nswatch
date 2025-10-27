@@ -1,24 +1,38 @@
-import About from "@/components/About";
-import Featured from "@/components/Featured";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
-import NewsletterSubscription from "@/components/NewsletterSubscription";
-import ProductsSection from "@/components/ProductsSection";
-import TestimonialPage from "@/components/TestimonialPage";
+import HeroSection from "@/app/_components/HeroSection";
+import About from "@/app/_components/About";
+import ProductsSection from "@/app/_components/ProductsSection";
+import TestimonialPage from "@/app/_components/TestimonialPage";
+import NewsletterSubscription from "@/app/_components/NewsletterSubscription";
+import Footer from "@/app/_components/Footer";
+import CustomSection from "@/app/_components/CustomSection";
+import Featured from "@/app/_components/Featured";
 
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <Featured />
-      <About />
-      <ProductsSection />
-      <TestimonialPage />
-      <NewsletterSubscription />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <CustomSection id="home">
+                <HeroSection/>
+            </CustomSection>
+            <CustomSection id="featured">
+                <Featured/>
+            </CustomSection>
+            <CustomSection id="products">
+                <ProductsSection/>
+            </CustomSection>
+            <CustomSection id="about">
+                <About/>
+            </CustomSection>
+            <CustomSection>
+                <TestimonialPage/>
+            </CustomSection>
+            <CustomSection>
+                <NewsletterSubscription/>
+            </CustomSection>
+            <CustomSection>
+                <Footer/>
+
+            </CustomSection>
+        </>
+    );
 }

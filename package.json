@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "framer-motion": "^12.11.0",
+<<<<<<< HEAD
+=======
+    "lenis": "^1.3.13",
+>>>>>>> my-feature
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
